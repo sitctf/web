@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN" data-page="tools">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+    <script type="module" crossorigin src="/assets/tools-B3PwRg6e.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/site-header-DOtGGqD5.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-up-right-Dww9Jzh-.js">
+    <link rel="modulepreload" crossorigin href="/assets/choice-group-BO02Qfd2.js">
+    <link rel="modulepreload" crossorigin href="/assets/badge-BNznkapA.js">
+    <link rel="modulepreload" crossorigin href="/assets/placeholder-BvqtP-7f.js">
+    <link rel="modulepreload" crossorigin href="/assets/page-shell-C_REX07j.js">
+    <link rel="stylesheet" crossorigin href="/assets/site-header-D-iWB_xC.css">
+    <title>工具箱 - 绍兴理工学院网络安全社</title>
+    <meta name="description" content="绍兴理工学院网络安全社工具箱，内有CTF常用工具合集，涵盖Web、MISC、密码学、Reverse、PWN、AWD等方向。" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+
+
+
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem("sit-ctf-theme");
+          var dark =
+            storedTheme === "dark" ||
+            (!storedTheme &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+          document.documentElement.style.colorScheme = dark ? "dark" : "light";
+
+
+
+          var storedMotion = localStorage.getItem("sit-ctf-motion");
+          var motion =
+            storedMotion === "on" ||
+            (storedMotion === null &&
+              !window.matchMedia("(max-width: 639px)").matches &&
+              !window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+          document.documentElement.dataset.motion = motion ? "on" : "off";
+
+
+          if (localStorage.getItem("sit-ctf-locale") === "en") {
+            document.documentElement.lang = "en";
+          }
+        } catch (e) {
+          document.documentElement.dataset.motion = "on";
+        }
+      })();
+    </script>
+  </body>
+</html>

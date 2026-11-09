@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+    <script type="module" crossorigin src="/assets/index-xAF3vkWy.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/site-header-DOtGGqD5.js">
+    <link rel="modulepreload" crossorigin href="/assets/card-DM05Ku4l.js">
+    <link rel="modulepreload" crossorigin href="/assets/newspaper-DuUuEtUG.js">
+    <link rel="modulepreload" crossorigin href="/assets/triangle-alert-DThJ3OcQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/badge-BNznkapA.js">
+    <link rel="modulepreload" crossorigin href="/assets/count-up-CfYmt6yD.js">
+    <link rel="modulepreload" crossorigin href="/assets/placeholder-BvqtP-7f.js">
+    <link rel="modulepreload" crossorigin href="/assets/json-list-CHHoxHuI.js">
+    <link rel="stylesheet" crossorigin href="/assets/site-header-D-iWB_xC.css">
+    <title>首页 - 绍兴理工学院网络安全社</title>
+    <meta name="description" content="绍兴理工学院网络安全社（SITCTF）致力于普及信息安全知识，培养实战型安全人才。曾在多个国内/国际竞赛中拿奖。" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem("sit-ctf-theme");
+          var dark =
+            storedTheme === "dark" ||
+            (!storedTheme &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+          document.documentElement.style.colorScheme = dark ? "dark" : "light";
+
+
+
+          var storedMotion = localStorage.getItem("sit-ctf-motion");
+          var motion =
+            storedMotion === "on" ||
+            (storedMotion === null &&
+              !window.matchMedia("(max-width: 639px)").matches &&
+              !window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+          document.documentElement.dataset.motion = motion ? "on" : "off";
+
+
+          if (localStorage.getItem("sit-ctf-locale") === "en") {
+            document.documentElement.lang = "en";
+          }
+        } catch (e) {
+          document.documentElement.dataset.motion = "on";
+        }
+      })();
+    </script>
+  </body>
+</html>

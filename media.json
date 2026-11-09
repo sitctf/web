@@ -1,0 +1,23 @@
+{
+  "_note": "媒体报道清单。每条四个字段：title（报道原标题，照抄不要改写）/ source（刊发媒体）/ date（YYYY-MM-DD，列表按它从新到旧排）/ url（原文地址，HTTPS）。顺序写乱没关系，读的时候会重新排。要改就改 public/ 下这一份，改完刷新页面就是新的；**dist/ 里那份是构建时拷过去的副本，改那边没用，下次构建还会被覆盖**。",
+  "items": [
+    {
+      "title": "会聊天的“王阳明”来了",
+      "source": "绍兴日报",
+      "date": "2026-10-03",
+      "url": "https://www.shaoxing.com.cn/p/3468517.html"
+    },
+    {
+      "title": "青年科创不妨多扎根烟火",
+      "source": "绍兴日报",
+      "date": "2026-09-30",
+      "url": "https://www.shaoxing.com.cn/p/3467837.html"
+    },
+    {
+      "title": "榜样力量｜蔡元培奖学金候选团队CTF实验室：绘就青春奋斗者“群像”",
+      "source": "绍兴理工学院",
+      "date": "2024-12-10",
+      "url": "https://www.zsit.edu.cn/info/1016/10041.htm"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+import{F as e,I as t,R as n,j as r,n as i}from"./site-header-DOtGGqD5.js";import{n as a}from"./news-page-uckS6pAu.js";var o=n(t(),1),s=e(),c=r();(0,s.createRoot)(document.getElementById(`root`)).render((0,c.jsx)(o.StrictMode,{children:(0,c.jsx)(i,{children:(0,c.jsx)(a,{})})}));
